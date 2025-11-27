@@ -35,7 +35,13 @@ const images = [
     "xoyqidq",
     "xp1texq",
     "y3zh7d6",
-    "yef7fdb"
+    "yef7fdb",
+    "check-mark",
+    "price-tag",
+    "sell-card",
+    "skeleton-inside",
+    "pencil-ruler",
+    "door_cancel",
 ];
 
 // Populate gallery
