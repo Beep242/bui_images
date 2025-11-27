@@ -42,6 +42,7 @@ const images = [
     "skeleton-inside",
     "pencil-ruler",
     "door_cancel",
+    "uzi",
 ];
 
 // Populate gallery
