@@ -1,0 +1,20 @@
+name: Gitea deploy
+
+# Serves this repo directly from /opt/bui_images via Caddy (img.iambeep.com).
+# Runner is host-mode, registered only under the vps-fallback label.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: vps-fallback
+    steps:
+      - name: Deploy
+        run: |
+          set -e
+          cd /opt/bui_images
+          git fetch gitea
+          git reset --hard gitea/main
